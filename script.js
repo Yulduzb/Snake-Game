@@ -116,6 +116,6 @@ if(snakeX <= 0 || snakeX > 30 || snakeY <= 0 || snakeY > 30 ){
    
 }
 changeFoodPosition();
-setIntervalId=setInterval(initGame,125);
+setIntervalId=setInterval(initGame,150);
 
 document.addEventListener("keydown",changeDirection);

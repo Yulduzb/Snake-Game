@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: 0;
@@ -8,7 +8,7 @@
 
 }
 
-body{
+body {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,8 +16,9 @@ body{
     background: #EBF7E4;
 }
 
-.wrapper{
-    width: 65vmin;  /*minimum boyutunun %65'i olarak ayarlar.*/
+.wrapper {
+    width: 65vmin;
+    /*minimum boyutunun %65'i olarak ayarlar.*/
     height: 70vmin;
     display: flex;
     flex-direction: column;
@@ -26,66 +27,98 @@ body{
     overflow: hidden;
 }
 
-.game-details{
-    color:#EBF7E4;
+.game-details {
+    color: #EBF7E4;
     font-size: 20px;
     font-weight: 500;
     padding: 20px 27px;
     display: flex;
     justify-content: space-between;
 }
-.play-board{
+
+.play-board {
     width: 100%;
     height: 100%;
     background: #0C1406;
     display: grid;
-    grid-template: repeat(30,1fr)/repeat(30,1fr);  /* 30 adet eşit genişlikli (1 fr) sütun oluşturur. İkinci kısım, yine aynı şekilde 30 adet eşit genişlikli sıra (satır) oluşturur.*/
+    grid-template: repeat(30, 1fr)/repeat(30, 1fr);
+    /* 30 adet eşit genişlikli (1 fr) sütun oluşturur. İkinci kısım, yine aynı şekilde 30 adet eşit genişlikli sıra (satır) oluşturur.*/
 
 }
 
-.play-board .food{
+.play-board .food {
     background: #ff003d;
 }
 
-.play-board .head{
+.play-board .head {
     background: #6CBA3B;
 }
 
 
- .controls{
+.controls {
     display: none;
-    justify-content: space-between;
-    text-align: center;
-    font-size: 20px;
- }
-
-
-.controls i{
-    padding: 25px 0;
-    color:#EBF7E4;
-    width: calc(100% / 4);
-    border-right: 1px solid #171b26;
+    justify-content: space-around;
+    align-items: center;
     cursor: pointer;
 }
 
+
+.controls i {
+    font-style: 700;
+    color: #EBF7E4;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+
+i:nth-child(4) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+
+}
+
+i:nth-child(2) {
+    grid-column-start: 1;
+    grid-column-end: 1;
+
+}
+
+i:nth-child(3) {
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+}
+
+i:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+}
+
+
+
+
 @media screen and (max-width:800px) {
-    .wrapper{
+    .wrapper {
         width: 90vmin;
         height: 115vmin;
     }
 
-    .game-details{
+    .game-details {
         font-size: 16px;
         padding: 15px 27px;
     }
-
+    
     .controls{
-        display: flex;
+        display: grid;
     }
 
     .controls i {
         padding: 15px 0;
-        font-size: 16px;
-        
+        font-size: 20px;
+
     }
 }
