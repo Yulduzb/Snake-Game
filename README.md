@@ -10,4 +10,6 @@ HTML
 CSS
 Javascript
 
-![]()
+ Live preview: https://yulduzb.github.io/Snake-Game/
+
+![](snakeGame.gif)
