@@ -104,7 +104,7 @@ i:nth-child(1) {
 
 @media screen and (max-width:800px) {
   body{
-    margin-top: 50px;
+  
     align-items: start;
   }
 
