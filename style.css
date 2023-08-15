@@ -10,7 +10,7 @@
 
 body {
     display: flex;
-    align-items: center;
+    align-items:center ;
     justify-content: center;
     min-height: 100vh;
     background: #EBF7E4;
@@ -64,7 +64,6 @@ body {
 
 
 .controls i {
-    font-style: 700;
     color: #EBF7E4;
     cursor: pointer;
     text-align: center;
@@ -101,10 +100,18 @@ i:nth-child(1) {
 
 
 
+
+
 @media screen and (max-width:800px) {
+  body{
+    margin-top: 50px;
+    align-items: start;
+  }
+
+
     .wrapper {
         width: 90vmin;
-        height: 115vmin;
+        height:120vmin;
     }
 
     .game-details {
@@ -122,3 +129,13 @@ i:nth-child(1) {
 
     }
 }
+
+
+@media screen and (max-width:500px) {
+   
+      .wrapper {
+          width: 90vmin;
+          height:150vmin;
+      }
+
+    }
